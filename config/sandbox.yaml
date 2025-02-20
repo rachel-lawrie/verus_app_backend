@@ -1,0 +1,18 @@
+server:
+  port: 8080
+database:
+  host: ""                           # Not used for Atlas, but must exist for consistency
+  port: 0                            # Not used for Atlas, but must exist for consistency
+  user: ""                           # Not used for Atlas, but must exist for consistency
+  password: ""                       # Not used for Atlas, but must exist for consistency
+  name: sandbox_db                   # Specify the database name (used in application logic)
+  cacheExpirationMins: 10            # Cache expiration time in minutes
+  cacheCleanupIntervalMins: 30       # Cache cleanup interval in minutes
+  useAtlas: true                     # Indicates this environment uses MongoDB Atlas
+aws:
+  region: us-east-1
+  bucketName: upload-documents2
+
+vendors:
+  sumsub:
+    webhookSecretKey: ""

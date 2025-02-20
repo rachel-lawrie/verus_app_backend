@@ -1,0 +1,17 @@
+server:
+  port: 8080
+database:
+  host: mongodb-container            # Service name of the MongoDB container
+  port: 27017                        # Default MongoDB port
+  name: dev_db             # Optional: Specify the database name
+  CacheExpirationMins: 10     # Optional: Specify the cache expiration time in minutes
+  CacheCleanupIntervalMins: 30   # Optional: Specify the cache cleanup interval in minutes
+  useAtlas: false
+  AtlasConnectionURI: ""
+aws:
+  region: us-east-1
+  bucketName: upload-documents2
+
+vendors:
+  sumsub:
+    webhookSecretKey: ""

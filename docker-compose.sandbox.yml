@@ -1,0 +1,23 @@
+name: app-backend
+
+networks:
+  shared-network:
+    external: true
+
+services:
+  app:
+    container_name: app-backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ENV: sandbox # Specify the environment here
+    environment:
+      CONFIG_ENV: sandbox
+      LOG_LEVEL: debug
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    networks:
+      - shared-network

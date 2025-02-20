@@ -1,0 +1,41 @@
+# Ignore Go binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries built with `go test -c`
+*.test
+
+# Output of the Go coverage tool
+*.out
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Dependency directories (uncomment if using vendor mode)
+# vendor/
+
+# Ignore the .env file in verus-authentication
+*.env
+
+# Ignore build artifacts in verus-authentication
+verus-authentication/*.exe
+verus-authentication/*.out
+
+# Ignore IDE/editor config files (optional)
+verus-authentication/.vscode/
+verus-authentication/.idea/
+
+# Ignore upload files
+uploads/
+main
+wal/
+createApplicant.json
+
+
+docker/config/promtail/positions.yaml
+
+.netrc
